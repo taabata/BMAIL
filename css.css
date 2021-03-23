@@ -1,0 +1,286 @@
+@keyframes an1{
+    0%{left:100%; opacity: 0;}
+    100%{left:40%; opacity: 1;}
+}
+@keyframes an2{
+    0%{transform: scaleY(1);}
+    100%{transform: scaleY(-1);}
+}
+@keyframes an3{
+    0%{transform: scaleY(-1);}
+    100%{transform: scaleY(1);}
+}
+@keyframes an4{
+    0%{transform: scale(1); top: 0;}
+    100%{transform: scale(0.5); top: -30%;}
+}
+@keyframes an5{
+    0%{opacity: 0;; top: 45%; visibility: visible;}
+    100%{opacity: 1; top: 50%; visibility: visible;}
+}
+@keyframes appear{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes clouds1{
+    0%{left: -10%;}
+    100%{left: 110%;}
+}
+@keyframes clouds2{
+    0%{left: 50%;}
+    50%{left: 110%;}
+    50.0001%{left: -10%;}
+    100%{left: 50%;}
+}
+}
+@keyframes wings{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(45deg);}
+    100%{transform: rotate(0deg);}
+}
+html{
+    background: lightblue;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#whole{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+}
+.wrp{
+    position: fixed;
+    top: 15%;
+    left: 100%;
+    width: 500px;
+    height: 500px;
+    animation: an1 0.5s forwards;
+}
+.inv{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    
+}
+.dashes{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    width: 500px;
+    height: 500px;
+}
+#end{
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+#tr{
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 100px solid rgb(255, 180, 42);
+    transform: scaleY(1);
+    transform-origin: 0 0;
+    animation: an2 0.5s 1s forwards;
+}
+#sq{
+    position: fixed;
+    width: 200px;
+    height: 120px;
+    background-color: orange;
+    
+}
+#ds1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 5px;
+    background-color: rgb(29, 29, 29);
+    clip-path: polygon(0 0,100px 0,90px 5px,0 5px);
+}
+#ds2{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 75px;
+    height: 5px;
+    background-color: rgb(29, 29, 29);
+    clip-path: polygon(0 0,75px 0,65px 5px,0 5px);
+}
+#ds3{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 50px;
+    height: 5px;
+    background-color: rgb(29, 29, 29);
+    clip-path: polygon(0 0,50px 0,40px 5px,0 5px);
+}
+#bee{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to right, black 0%, black 20%, rgb(184, 184, 0) 20%, rgb(184, 184, 0) 40%,black 40%, black 60%, rgb(184, 184, 0) 60%, rgb(184, 184, 0) 80%,black 80%, black 100%);
+}
+#wing1{
+    position: absolute;
+    top: -40%;
+    left: 10%;
+    width: 25px;
+    height: 50px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: grey;
+    opacity: 0.25;
+    animation: wings 1s infinite;
+}
+#wing2{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 25px;
+    height: 50px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    background: grey;
+    opacity: 0.25;
+}
+#beecont{
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: scale(0.25);
+    visibility: hidden;
+}
+#grass{
+    position: fixed;
+    top: 80%;
+    width: 200%;
+    height: 40%;
+    background: rgb(0, 212, 0);
+    transform: translateX(-25%);
+    border-radius: 50%;
+}
+#logo{
+    position: fixed;
+    top: 33%;
+    left: 44%;
+    visibility: hidden;
+}
+#logo p{
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(216, 141, 3);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+span{
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+#form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 50%;
+    background: linear-gradient(45deg, rgba(255, 203, 106, 0.9) 0%, rgba(252, 188, 70, 0.301) 50%, rgba(255, 203, 106, 0.9) 100%);
+    border-radius: 30px;
+    visibility: hidden;    
+}
+#form p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+#name,#pass{
+    position: absolute;
+    border: hidden;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    background: transparent;
+    caret-color: transparent;
+    left: 5%; 
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+#name:focus,#pass:focus{
+    border-bottom: 2px solid black;
+}
+#username{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+#name{
+    top: 20%;
+}
+#password{
+    position: absolute;
+    left: 5%;
+    top: 35%;
+}
+#pass{
+    top: 50%;
+}
+#signin{
+    position: absolute;
+    left: 5%;
+    top: 65%;
+    cursor: pointer;
+}
+#signin:hover{
+    color: rgb(32, 32, 32);
+}
+#cloudwrp{
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    left: -10%;
+    animation: clouds1 120s infinite;
+}
+#cloudwrp2{
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    left: 50%;
+    top: 20%;
+    animation: clouds2 120s infinite;
+}
+.cloud{
+    position: absolute;
+    top: 10%;
+    width: 300px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+}
+.circ{
+    position: absolute;
+    top: 5%;
+    left: 9.5%;
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50%;
+    clip-path: inset(0 0 75% 0);
+}
